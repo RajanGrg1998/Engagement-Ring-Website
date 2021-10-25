@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     font-weight: 400;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 999;
 `
 
 export const NavContainer = styled.div`

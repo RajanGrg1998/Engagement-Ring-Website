@@ -14,9 +14,9 @@ function App() {
 
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Home/> */}
+      <Home/>
       <About/>
       {/* 
       <Services/>
