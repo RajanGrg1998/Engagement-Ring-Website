@@ -73,8 +73,16 @@ export const SocialIconLink = styled.a`
 `
 
 export const Img = styled.img`
-    margin: 0;
+    margin: 10px;
     padding: 0;
     height: 34px;
     width: 34px;
+`
+export const SocialRowList = styled.ul`
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    list-style-type: none;
+    
 `
