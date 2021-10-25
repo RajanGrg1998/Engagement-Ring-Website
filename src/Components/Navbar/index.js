@@ -33,25 +33,25 @@ const Navbar = ({toggle}) => {
                                 <WorldImage src={world} alt='World'/><WorldWide>WORLDWIDE</WorldWide>
                             </NavLanguage>
 
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Whatsapp'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank'  aria-label='Whatsapp'>
                                 <Img src={whatsapp} alt='Whatsapp'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Skype'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Skype'>
                                 <Img src={skype} alt='Skype'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Gmail'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Gmail'>
                                 <Img src={gmail} alt='Gmail'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Twitter'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Twitter'>
                                 <Img src={twitter} alt='Twitter'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Linkedin'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Linkedin'>
                                 <Img src={linkedin} alt='Linkedin'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Youtube'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Youtube'>
                                 <Img src={youtube} alt='Youtube'/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' target='_blank' aria-label='Instagram'>
+                            <SocialIconLink href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
                                 <Img src={instagram} alt='Instagram'/>
                             </SocialIconLink>
                             <MenuIcon onClick={toggle}>
