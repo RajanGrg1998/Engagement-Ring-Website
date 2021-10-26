@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
 import Home from './Components/Home';
 import About from './Components/About'
+import Services from './Components/Services/ServicesElement'
+import Terminology from './Components/Terminology/TerminologyElement'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +20,8 @@ function App() {
       <Navbar toggle={toggle}/>
       <Home/>
       <About/>
+      <Services/>
+      <Terminology/>
       {/* 
       <Services/>
       <Gallary/>
