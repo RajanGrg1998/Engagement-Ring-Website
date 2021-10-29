@@ -13,7 +13,7 @@ export default function Ter() {
 
 
   return (
-            <div className="app">
+            <div className="app" id='terminology'>
                 <div className='container-fluid color-black pt-4'>
                     <div className='container s pt-5'>
                         <div class="row justify-content-center">

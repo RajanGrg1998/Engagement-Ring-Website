@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
 import { RiMenu3Line } from "react-icons/ri";
 import { animateScroll } from 'react-scroll';
 import logo from '../../images/logo.png'
@@ -10,19 +10,19 @@ import linkedin from '../../images/linkedin.png'
 import youtube from '../../images/youtube.png'
 import instagram from '../../images/instagram.png'
 import world from '../../images/world.png'
-import {Nav, NavContainer, NavLogo, CompanyLogo, MenuIcon, NavMenu, SocialIconLink, Img, NavLanguage, WorldImage, WorldWide, MenuIconResponsive} from './NavBarElements'
+import {Nav, NavContainer, NavLogo, CompanyLogo, MenuIcon, NavMenu, SocialIconLink, Img, NavLanguage, WorldImage, WorldWide, MenuIconResponsive} from './TerNavBarElement'
 
 
-const Navbar = ({toggle}) => {
+const TerNavbarIndex = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(true);
 
     const toggleHome = () =>{
         animateScroll.scrollToTop();
     }
-
+    
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+             <Nav scrollNav={scrollNav}>
                 <NavContainer>
                     <NavLogo to='/' onClick={toggleHome}>
                         <CompanyLogo src={logo} alt='Company Logo'/>
@@ -68,4 +68,4 @@ const Navbar = ({toggle}) => {
     )
 }
 
-export default Navbar
+export default TerNavbarIndex
