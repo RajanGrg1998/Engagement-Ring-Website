@@ -1,35 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Sidebar from './Components/Sidebar';
-import Home from './Components/Home';
-import About from './Components/About'
-import Services from './Components/Services/ServicesElement'
-import Terminology from './Components/Terminology/TerminologyElement'
-import Video from './Components/Video/Video';
+import Home from './pages'
+import Terminology from './pages/Terminology.js'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () =>{
-    setIsOpen(!isOpen);
-  }
-
   return (
-    <>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Video/>
-      <Terminology/>
-      {/* 
-      <Services/>
-      <Gallary/>
-      <Contact/>
-      <Footer/> */}
-    </>
+    <Router>
+      <Switch>
+        <Route path='/' component={Home} exact/>
+        <Route path='/terminology' component={Terminology} exact/>
+      </Switch>
+    </Router>
   );
 }
 

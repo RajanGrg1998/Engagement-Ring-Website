@@ -4,6 +4,7 @@ import {Link} from 'react-scroll'
 export const HomeContainer = styled.div`
     height: 100vh;
     max-height: 1030px;
+    min-height: 600px;
     position: relative;
     overflow: hidden;
 `
@@ -25,8 +26,8 @@ export const HomeImage = styled.img`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 `
 

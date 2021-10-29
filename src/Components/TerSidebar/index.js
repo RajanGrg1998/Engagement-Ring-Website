@@ -7,9 +7,9 @@ import linkedin from '../../images/linkedin.png'
 import youtube from '../../images/youtube.png'
 import instagram from '../../images/instagram.png'
 import world from '../../images/world.png'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SocialRowList, SocialIconLink, Img} from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SocialRowList, SocialIconLink, Img} from './TerSidebarElements'
 
-const Sidebar = ({isOpen, toggle}) => {
+const TerSidebar = ({isOpen, toggle}) => {
     return (
         <SidebarContainer isOpen={isOpen}>
             <Icon onClick={toggle}>
@@ -66,4 +66,4 @@ const Sidebar = ({isOpen, toggle}) => {
     )
 }
 
-export default Sidebar
+export default TerSidebar

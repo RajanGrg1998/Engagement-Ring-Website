@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import './Video.css'
-import Shoe1 from '../../images/slider/shoe1.jpg'
-import Shoe2 from '../../images/slider/shoe2.jpg'
-import Shoe3 from '../../images/slider/shoe3.jpg'
+
+import './Image.css'
+import Image1 from '../../images/slider/image1.jpg'
+import Image2 from '../../images/slider/image2.jpg'
+import Image3 from '../../images/slider/image3.jpg'
 
 export default class Video extends Component {
 
@@ -34,17 +35,17 @@ export default class Video extends Component {
                             ref={slider => (this.slider1 = slider)}
                         >
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Shoe1} alt="" className='img-fluid vw-100'/>
+                                <img src={Image1} alt="" className='img-fluid vw-100'/>
                             </div>
 
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Shoe2} className='img-fluid vw-100' alt=""/>
+                                <img src={Image2} className='img-fluid vw-100' alt=""/>
                             </div>
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Shoe3} class="img-fluid vw-100" alt=""/>
+                                <img src={Image3} class="img-fluid vw-100" alt=""/>
                             </div>
                             <div className='container-fluid p-0 m-0'>
-                            <img src={Shoe1} class="img-fluid vw-100" alt=""/>
+                            <img src={Image1} class="img-fluid vw-100" alt=""/>
                             </div>
                         </Slider>
                     
@@ -60,23 +61,23 @@ export default class Video extends Component {
                         >
                             <div class="container" >
                                 <div class="card" >
-                                    <img src={Shoe1} class="card-img-top" alt=""/>
+                                    <img src={Image1} class="card-img-top" alt=""/>
                                 </div>
                             </div>
 
                             <div class="container">
                                 <div class="card" >
-                                    <img src= {Shoe2} class="card-img-top" alt=""/>
+                                    <img src= {Image2} class="card-img-top" alt=""/>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="card" >
-                                    <img src={Shoe3} class="card-img-top" alt=""/>
+                                    <img src={Image3} class="card-img-top" alt=""/>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="card" >
-                                    <img src={Shoe1} class="card-img-top" alt=""/>
+                                    <img src={Image1} class="card-img-top" alt=""/>
                                 </div>
                             </div>
 
