@@ -31,16 +31,16 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Follow us</FooterLinkTitle>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>Facebook</SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>Twitter</SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>Youtube</SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>Instagram</SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>LinkedIn</SocialLinks>
+                            <SocialLinks href='#'aria-label='Instagram'>Facebook</SocialLinks>
+                            <SocialLinks href='#' aria-label='Instagram'>Twitter</SocialLinks>
+                            <SocialLinks href='#' aria-label='Instagram'>Youtube</SocialLinks>
+                            <SocialLinks href='#' aria-label='Instagram'>Instagram</SocialLinks>
+                            <SocialLinks href='#' aria-label='Instagram'>LinkedIn</SocialLinks>
                         </FooterLinkItems>
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Get the App</FooterLinkTitle>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
+                            <SocialLinks href='#' aria-label='Instagram'>
                                 <ImageLink><Image src={apple} alt='Apple'/></ImageLink>
                             </SocialLinks>
                             <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
