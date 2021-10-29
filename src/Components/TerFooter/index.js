@@ -4,9 +4,9 @@ import google from '../../images/google.png'
 import circle from '../../images/footerCircle.svg'
 import logo from '../../images/logo.png'
 import divider from '../../images/Divider.png'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkItems1, FooterLinkTitle, FooterParagraph, FooterLink, FooterLinkRoute, SocialLinks, ImageLink, Image, CircleImage, RightsContainer, RightsWrapper, HomeImage, TopDiv, Divider, DividerWrap, BottomDiv, Rights } from './FooterElements'
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkItems1, FooterLinkTitle, FooterParagraph, FooterLink, FooterLinkRoute, SocialLinks, ImageLink, Image, CircleImage, RightsContainer, RightsWrapper, HomeImage, TopDiv, Divider, DividerWrap, BottomDiv, Rights } from './TerFooterElement'
 
-const Footer = () => {
+const TerFooter = () => {
     return (
         <FooterContainer>
                 <CircleImage src={circle} alt='Circle'/>
@@ -32,7 +32,7 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>Follow us</FooterLinkTitle>
                             <SocialLinks href='#'aria-label='Instagram'>Facebook</SocialLinks>
-                            <SocialLinks href='#' aria-label='Instagram'>Twitter</SocialLinks>
+                            <SocialLinks href='#'aria-label='Instagram'>Twitter</SocialLinks>
                             <SocialLinks href='#' aria-label='Instagram'>Youtube</SocialLinks>
                             <SocialLinks href='#' aria-label='Instagram'>Instagram</SocialLinks>
                             <SocialLinks href='#' aria-label='Instagram'>LinkedIn</SocialLinks>
@@ -43,7 +43,7 @@ const Footer = () => {
                             <SocialLinks href='#' aria-label='Instagram'>
                                 <ImageLink><Image src={apple} alt='Apple'/></ImageLink>
                             </SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
+                            <SocialLinks href='#' aria-label='Instagram'>
                                 <ImageLink><Image src={google} alt='Google'/></ImageLink>
                             </SocialLinks>
                         </FooterLinkItems>
@@ -72,4 +72,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default TerFooter
