@@ -21,12 +21,11 @@ const TerFooter = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Quick Links</FooterLinkTitle>
-                            <FooterLink activeClass='active' to="home" exact='true' offset={-116}>Home</FooterLink>
-                            <FooterLink activeClass='active' to="about" exact='true' offset={-116}>About</FooterLink>
-                            <FooterLink to='services' exact='true' offset={-116}>Services</FooterLink>
-                            {/* <FooterLink to='gallery' exact='true' offset={-116}>Gallery</FooterLink> */}
-                            <FooterLink to='contact' exact='true' offset={-116}>Contact</FooterLink>
-                            <FooterLinkRoute to='/terminology'>Terminology</FooterLinkRoute>
+                            <FooterLink activeClass='active' to="/" exact='true' offset={-116}>Home</FooterLink>
+                            <FooterLink activeClass='active' to="/" exact='true' offset={-116}>About</FooterLink>
+                            <FooterLink to='/' exact='true' offset={-116}>Services</FooterLink>
+                            <FooterLink to='/' exact='true' offset={-116}>Gallery</FooterLink>
+                            <FooterLink to='/' exact='true' offset={-116}>Contact</FooterLink>
                         </FooterLinkItems>
 
                         <FooterLinkItems>

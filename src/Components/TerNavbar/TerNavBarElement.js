@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll';
+import {Link} from 'react-router-dom';
 
 export const Nav = styled.nav`
     background: #000;
@@ -12,6 +12,10 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 999;
+
+    @media screen and (max-width:750px){
+        height: 50px;
+    }
 `
 
 export const NavContainer = styled.div`
@@ -22,6 +26,10 @@ export const NavContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1636px;
+
+    @media screen and (max-width:750px){
+        height: 40px;
+    }
 `
 
 export const NavLogo = styled(Link)`
@@ -33,10 +41,10 @@ export const NavLogo = styled(Link)`
 `
 
 export const CompanyLogo = styled.img`
-    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    
 `
 
 export const MenuIcon = styled.div`
@@ -55,6 +63,10 @@ export const MenuIconResponsive = styled.div`
 
     @media screen and (max-width: 960px){
         display: flex;
+    }
+
+    @media screen and (max-width: 750px){
+        font-size: 28px;
     }
 `
 

@@ -26,7 +26,7 @@ export default class Video extends Component {
     render() {
         return (
             <>
-                <div className='container-fluid p-0 m-0 bg-black'>
+                <div id='gallery' className='container-fluid p-0 m-0 bg-black'>
                     <div id="video-section">
                         <Slider
                             arrows={false}

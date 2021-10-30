@@ -17,11 +17,10 @@ const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(true);
 
     const toggleHome = () =>{
-        animateScroll.scrollToTop();
+        animateScroll.scrollToTop({ duration : 0 });
     }
 
     return (
-        <>
             <Nav scrollNav={scrollNav}>
                 <NavContainer>
                     <NavLogo to='/' onClick={toggleHome}>
@@ -63,8 +62,7 @@ const Navbar = ({toggle}) => {
                         <RiMenu3Line/>
                     </MenuIconResponsive>
                 </NavContainer>
-            </Nav>      
-        </>
+            </Nav>    
     )
 }
 

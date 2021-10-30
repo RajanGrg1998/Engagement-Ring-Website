@@ -9,21 +9,22 @@ import instagram from '../../images/instagram.png'
 import world from '../../images/world.png'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SocialRowList, SocialIconLink, Img} from './TerSidebarElements'
 
-const TerSidebar = ({isOpen, toggle}) => {
+const TerSidebar = ({isOpen, isVisible, toggle}) => {
+
     return (
         <SidebarContainer isOpen={isOpen}>
             <Icon onClick={toggle}>
                 <CloseIcon/>
             </Icon>
 
-            <SidebarWrapper>
+            <SidebarWrapper isVisible={isVisible}>
                 <SidebarMenu>
-                    <SidebarLink to=''>Home</SidebarLink>    
-                    <SidebarLink to=''>About Us</SidebarLink>    
-                    <SidebarLink to=''>Services</SidebarLink>    
-                    <SidebarLink to=''>Videos</SidebarLink>    
-                    <SidebarLink to=''>Contact Us</SidebarLink>
-                    <SidebarLink to=''>Terminology</SidebarLink>
+                    <SidebarLink to='/' exact='true' offset={-116} onClick={toggle}>Home</SidebarLink>    
+                    <SidebarLink to='/' exact='true' offset={-116} onClick={toggle}>About Us</SidebarLink>    
+                    <SidebarLink to='/' exact='true' offset={-116} onClick={toggle}>Services</SidebarLink>    
+                    <SidebarLink to='/' exact='true' offset={-116} onClick={toggle}>Gallery</SidebarLink>    
+                    <SidebarLink to='/' exact='true' offset={-116} onClick={toggle}>Contact Us</SidebarLink>    
+
                     <SocialRowList>
                         <SocialIconLink href='#'  aria-label='World'>
                                 <Img src={world} alt='World'/>
@@ -40,7 +41,9 @@ const TerSidebar = ({isOpen, toggle}) => {
                         <SocialIconLink href='#'  aria-label='Gmail'>
                             <Img src={gmail} alt='Gmail'/>
                         </SocialIconLink>
+                    </SocialRowList>
 
+                    <SocialRowList>
                         <SocialIconLink href='#'  aria-label='Twitter'>
                             <Img src={twitter} alt='Twitter'/>
                         </SocialIconLink>
