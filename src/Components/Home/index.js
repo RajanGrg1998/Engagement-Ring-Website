@@ -13,7 +13,7 @@ const Home = () => {
 
                 <ContentWrapper>
                     <h1>ARE<br/>YOU A<br/>WINNER?</h1>
-                    <ScrollImageLink activeClass='active' to="about" smooth={true} duration={500} spy={true} exact='true'>
+                    <ScrollImageLink activeClass='active' to="about" offset={-116} exact='true'>
                         <ScrollImage src={homeScroll} alt='Home Scroll'/>
                     </ScrollImageLink>
                 </ContentWrapper>

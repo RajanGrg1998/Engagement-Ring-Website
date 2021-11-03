@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import apple from '../../images/apple.png'
 import google from '../../images/google.png'
 import circle from '../../images/footerCircle.svg'
@@ -7,6 +7,31 @@ import divider from '../../images/Divider.png'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkItems1, FooterLinkTitle, FooterParagraph, FooterLink, FooterLinkRoute, SocialLinks, ImageLink, Image, CircleImage, RightsContainer, RightsWrapper, HomeImage, TopDiv, Divider, DividerWrap, BottomDiv, Rights } from './FooterElements'
 
 const Footer = () => {
+    const [width, setWidth]   = useState(window.innerWidth);
+    const [off, setOff] = useState();
+
+    const mainFunction = () => {
+        if (width < 751) {
+            setOff(-50);
+        }
+        else if(width > 750){
+            setOff(-116)
+        }
+    }
+
+    const updateWidthAndHeight = () => {
+        setWidth(window.innerWidth);
+        mainFunction();
+    };
+
+    useEffect(() => {
+        mainFunction();
+        window.addEventListener("resize", updateWidthAndHeight);
+        return () => {
+            window.removeEventListener("resize", updateWidthAndHeight);
+        }
+    });
+
     return (
         <FooterContainer>
                 <CircleImage src={circle} alt='Circle'/>
@@ -21,11 +46,11 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Quick Links</FooterLinkTitle>
-                            <FooterLink activeClass='active' to="home" exact='true' offset={-116}>Home</FooterLink>
-                            <FooterLink activeClass='active' to="about" exact='true' offset={-116}>About</FooterLink>
-                            <FooterLink to='services' exact='true' offset={-116}>Services</FooterLink>
-                            {/* <FooterLink to='gallery' exact='true' offset={-116}>Gallery</FooterLink> */}
-                            <FooterLink to='contact' exact='true' offset={-116}>Contact</FooterLink>
+                            <FooterLink activeClass='active' to="home" exact='true' offset={off}>Home</FooterLink>
+                            <FooterLink activeClass='active' to="about" exact='true' offset={off}>About Us</FooterLink>
+                            <FooterLink to='services' exact='true' offset={off}>Services</FooterLink>
+                            <FooterLink to='gallery' exact='true' offset={off}>Gallery</FooterLink>
+                            <FooterLink to='contact' exact='true' offset={off}>Contact Us</FooterLink>
                             <FooterLinkRoute to='/terminology'>Terminology</FooterLinkRoute>
                         </FooterLinkItems>
 
@@ -40,10 +65,10 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Get the App</FooterLinkTitle>
-                            <SocialLinks href='#' aria-label='Instagram'>
+                            <SocialLinks href='#' target='' aria-label='Instagram'>
                                 <ImageLink><Image src={apple} alt='Apple'/></ImageLink>
                             </SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
+                            <SocialLinks href='#' target='' aria-label='Instagram'>
                                 <ImageLink><Image src={google} alt='Google'/></ImageLink>
                             </SocialLinks>
                         </FooterLinkItems>

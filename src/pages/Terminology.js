@@ -1,21 +1,24 @@
 import React, {useState} from 'react'
 import Ter from '../Components/Terminology/TerminologyElement.js'
-import Navbar from '../Components/Navbar'
-import Sidebar from '../Components/Sidebar'
-import Footer from '../Components/Footer'
+import TerNavbar from '../Components/TerNavbar'
+import TerSidebar from '../Components/TerSidebar'
+import TerFooter from '../Components/TerFooter'
 
 const Terminology = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
     const toggle = () =>{
-        setIsOpen(!isOpen);
+    setIsOpen(!isOpen);
+    setIsVisible(!isVisible);
     }
+
     return (
         <>
-        <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
+        <TerSidebar isOpen={isOpen} isVisible={isVisible} toggle={toggle}/>
+        <TerNavbar toggle={toggle}/>
         <Ter/>
-        <Footer/>
+        <TerFooter/>
         </>
     )
 }
