@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
     min-height: 600px;
     position: relative;
     overflow: hidden;
+    background: #000;
 `
 
 export const HomeWrapper = styled.div`
